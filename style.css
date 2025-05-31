@@ -116,15 +116,17 @@ nav .icons i {
 .menCategory {
   position: relative;
 }
+
 .manSubCategory {
   width: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
   background-color: #f7f6f0;
-  top: 80px;
-  left: -80px;
-  width: 100%;
+  top: 30px;
+  /* left: -80px; */
+  right: -200px;
+  width: 200px;
   /* padding-left: 0; */
   padding: 70px;
   display: flex;
@@ -383,13 +385,29 @@ nav .icons i {
 
 .imgContainer {
   display: flex;
-  gap: 20;
+  /* gap: 5px; */
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
 }
+.imgContainer .shoeCard {
+  position: relative;
+}
+.imgContainer .cartBtn {
+  position: absolute;
+  bottom: 10px;
+  left: 18%;
+  display: none;
+  transition: 0.5s ease;
+}
+.imgContainer .cartBtn button:hover {
+  background-color: rgb(4, 162, 224);
+  border: none;
+  transition: 0.5s ease;
+  color: #fff;
+}
 .shoeCard {
-  width: 33%;
+  width: 23%;
   height: 450px;
   background-color: red;
   margin-bottom: 20px;
@@ -400,6 +418,10 @@ nav .icons i {
   scale: 1.1;
   transition: 0.5s;
   filter: grayscale(0%);
+}
+.shoeCard:hover .cartBtn {
+  display: block;
+  transition: 0.5s ease;
 }
 .shoeCard img {
   width: 100%;
@@ -505,6 +527,7 @@ nav .icons i {
 }
 .bestSellerimgContainer .shoeCard {
   position: relative;
+  transition: 0.5s;
 }
 .bestSellerimgContainer .shoeCard img {
   filter: grayscale(0%);
@@ -519,4 +542,29 @@ nav .icons i {
   background-color: #a39d94;
   color: #fff;
   transition: 0.5s;
+}
+.productConetnt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #afa995d5;
+  width: 100%;
+  height: 70%;
+  color: #fff;
+  opacity: 0;
+}
+.productConetnt p {
+  font-family: operasansLight;
+  font-size: 1.3rem;
+}
+.productConetnt p span {
+  font-size: 2rem;
+}
+.shoeCard:hover .productConetnt {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.7s ease-in-out;
+  cursor: pointer;
 }
