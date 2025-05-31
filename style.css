@@ -60,14 +60,94 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  /* padding: 25px 0; */
+  position: relative;
+}
+.homeLink {
+  position: relative;
+  transition: 0.5s linear;
+  /* background-color: red; */
+}
+.homeSubLink {
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  width: 200px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0;
+  gap: 0;
+  background-color: #f7f6f0;
+  display: none;
+  opacity: 0;
+  transition: 0.5s linear;
+}
+
+.homeLink:hover .homeSubLink {
+  display: block;
+  opacity: 1;
+  transition: 0.5s linear;
+}
+.homeSubLink li {
+  width: 100%;
+  /* background-color: blue; */
+  padding: 20px;
+  border-top: 1px solid gray;
+}
+/* Home sub link end */
+/* Pagesublink start */
+.pagesLink {
+  /* position: relative; */
+}
+.pagesSubLink {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  width: 100%;
+  background-color: #f7f6f0;
+  /* display: flex; */
+  opacity: 0;
+  display: none;
+}
+.pagesLink:hover .pagesSubLink {
+  opacity: 1;
+  display: flex;
+}
+.pagesSubLink ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.pagesSubLink ul li {
+  padding: 0;
+}
+
+.category {
+  position: relative;
+}
+.subCategory {
+  position: absolute;
+  left: 0;
+  /* width: 500px; */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.category:hover .subCategory {
+  opacity: 1;
 }
 nav ul {
   display: flex;
-  /* justify-content: space-between; */
   gap: 50px;
   align-items: center;
   justify-content: flex-start;
+}
+nav ul li {
+  padding: 40px 0;
 }
 nav .icons {
   display: flex;
