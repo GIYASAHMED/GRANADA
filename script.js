@@ -20,3 +20,10 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
