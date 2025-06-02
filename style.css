@@ -448,9 +448,27 @@ nav .icons i {
   justify-content: flex-start;
   align-items: flex-end;
 }
-.imgContainer .shoeCard {
-  position: relative;
+/*  */
+
+.shoeCard {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  height: 100%;
+  transition: box-shadow 0.3s;
+  background-color: #fff;
 }
+
+.shoeCard:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shoeCard img {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .imgContainer .cartBtn {
   position: absolute;
   bottom: 10px;
@@ -458,12 +476,12 @@ nav .icons i {
   display: none;
   transition: 0.5s ease;
 }
-.imgContainer .cartBtn button:hover {
+/* .imgContainer .cartBtn button:hover {
   background-color: rgb(4, 162, 224);
   border: none;
   transition: 0.5s ease;
   color: #fff;
-}
+} */
 /* .shoeCard {
   width: 23%;
   height: 450px;
@@ -601,7 +619,7 @@ nav .icons i {
   color: #fff;
   transition: 0.5s;
 }
-.productConetnt {
+/* .productConetnt {
   position: absolute;
   top: 0;
   left: 0;
@@ -625,4 +643,4 @@ nav .icons i {
   justify-content: center;
   transition: 0.7s ease-in-out;
   cursor: pointer;
-}
+} */
