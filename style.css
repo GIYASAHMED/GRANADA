@@ -116,6 +116,7 @@ nav .icons i {
 }
 .menCategory {
   position: relative;
+  z-index: 999;
 }
 
 .manSubCategory {
